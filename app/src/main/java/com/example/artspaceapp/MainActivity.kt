@@ -136,10 +136,10 @@ fun ArtNavigation(currentIndex: Int, previousImage: () -> Unit, nextImage: () ->
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Button(onClick = previousImage) {
+        Button(onClick = previousImage, modifier = Modifier.size(110.dp,40.dp)) {
             Text("Previous")
         }
-        Button(onClick = nextImage) {
+        Button(onClick = nextImage, modifier = Modifier.size(110.dp,40.dp)) {
             Text("Next")
         }
     }
